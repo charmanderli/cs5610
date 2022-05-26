@@ -4,11 +4,20 @@ body {
   padding: 0;
 }
 
-body {
-  font-family: "Space Mono", monospace;
-  color: aliceblue;
+.space {
+  color: #fff;
   background: center/cover url(../images/bg.jpg);
   background-repeat: no-repeat;
+}
+
+.spaceTitle {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 13px #fff, 0 0 42px #dd77ee, 0 0 92px #dd77ee,
+    0 0 102px #dd77ee;
+}
+
+body {
+  font-family: "Space Mono", monospace;
 }
 
 main {
@@ -31,17 +40,22 @@ header {
   position: fixed;
   top: 0;
   padding: 2.5%;
+
   display: flex;
   justify-content: center;
 }
 
 nav {
-  display: flexbox;
+  flex-grow: 1;
+  display: flex;
   justify-content: space-around;
 }
 
 button {
   background-color: black;
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 13px #fff, 0 0 42px #dd77ee, 0 0 92px #dd77ee,
+    0 0 102px #dd77ee;
   border-color: #dd77ee;
   font-family: "Space Mono", monospace;
   font-size: 1em;
@@ -55,13 +69,6 @@ button:hover {
   transform: translateY(-0.25em);
 }
 
-h1,
-h2,
-nav button {
-  color: #fff;
-  text-shadow: 0 0 10px #fff, 0 0 13px #fff, 0 0 42px #dd77ee, 0 0 92px #dd77ee,
-    0 0 102px #dd77ee;
-}
 .project img {
   object-fit: cover;
   width: 150px;
