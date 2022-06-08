@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
 const Product = require("./models/product");
 //const uri = "mongodb://127.0.0.1/my_database";
-const uri =
-  "mongodb+srv://charmanderli:630909Sf!@cluster0.y6phj4y.mongodb.net/?retryWrites=true&w=majority";
+const uri = process.env.DB_URL;
 try {
   // Connect to the MongoDB cluster
   mongoose.connect(
