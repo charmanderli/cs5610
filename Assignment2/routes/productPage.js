@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const path = require("path");
-const Product = require(path.join(__dirname, "../models/product"));
+const Product = require(path.join(__dirname, "../models/products.js"));
 
 // C-Show the make new product form page
 router.get("/new", (req, res) => {
@@ -28,7 +28,6 @@ router.get("/:id", async (req, res, next) => {
 });
 
 const { body, validationResult } = require("express-validator");
-const { nextTick } = require("process");
 // C-Submit the make new product form and post data
 router.post(
   "/",
@@ -36,14 +35,14 @@ router.post(
 
   body("price").custom((value) => {
     value = parseFloat(value);
-    if (value < 0 || value > 10) {
+    if (value < 0 || value > 1000) {
       throw new Error("price has to be between 0 and 1000");
     }
     return true;
   }),
   body("quantity").custom((value) => {
     value = parseFloat(value);
-    if (value < 0 || value > 10) {
+    if (value < 0 || value > 1000) {
       throw new Error("quantity has to be between 0 and 1000");
     }
     return true;
@@ -81,14 +80,14 @@ router.put(
 
   body("price").custom((value) => {
     value = parseFloat(value);
-    if (value < 0 || value > 10) {
+    if (value < 0 || value > 1000) {
       throw new Error("price has to be between 0 and 1000");
     }
     return true;
   }),
   body("quantity").custom((value) => {
     value = parseFloat(value);
-    if (value < 0 || value > 10) {
+    if (value < 0 || value > 1000) {
       throw new Error("quantity has to be between 0 and 1000");
     }
     return true;
