@@ -1,5 +1,14 @@
 # cs5610
 
+Iteration 1
+Idea: make a local guide yelp, where people can search posts, write posts, display post details, and delete when logged in
+
+1. Finished: crud of post model in mongoose, post, postList and postDetail, Nav bar, some links and routes in react
+
+2. Problem: links and routes, issue with heroku
+
+3. Heroku link: updated soon
+
 Assignment 2
 
 1. Purpose: an online platform for the local grocery stores and farm to sell products, they can add products and descriptions, while customer could see them, the current crud version is only for the products page, the stores page would be updated.
