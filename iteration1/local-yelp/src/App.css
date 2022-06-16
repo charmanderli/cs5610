@@ -1,4 +1,4 @@
-.App body {
+.App .body {
   text-align: left;
   font-size: 16px;
   margin-left: 15%;
@@ -8,16 +8,43 @@
 .Nav {
   display: flex;
   box-shadow: 0px 4px 4px 0px #00000040;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.Nav h1 {
+  display: inline-block;
+}
+
+.Nav-left {
+  margin-left: 10%;
+}
+.Nav-right {
+  margin-right: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.city {
+  text-decoration: underline;
+}
+
+.Nav-right .add {
+  background: center/cover url(../public/images/plus.png);
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: none;
+  margin-left: 30px;
+  margin-right: 30px;
+}
 .logo {
   content: "";
   display: inline-block;
   background: center/cover url(../public/images/logo.png);
   width: 40px;
   height: 40px;
-  margin-right: 60px;
+  margin-right: 30px;
 }
 
 .Button {
@@ -35,12 +62,15 @@
   margin-top: 5%;
   margin-bottom: 5%;
   height: 302px;
-  justify-content: space-around;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: center/cover url(../public/images/empire-of-light.jpg);
 }
 
 .searchInput {
-  width: 250px;
+  width: 350px;
   height: 30px;
   font-size: 16px;
   margin-right: 20px;
@@ -49,11 +79,7 @@
 }
 
 .searchBar {
-  position: absolute;
-  width: 800px;
-  height: 57px;
-  left: 100px;
-  top: 100px;
+  display: inline-block;
 }
 
 .postContainer {
@@ -67,9 +93,14 @@
   justify-content: space-around;
 }
 
-.textComment {
+.textPost {
   width: 55%;
 }
+
+.postBody {
+  height: 80px;
+}
+
 .section {
   width: 10%;
 }

@@ -1,18 +1,23 @@
 import React from "react";
-import Header from "./Header";
 import LoginButton from "./LoginButton";
+import { Router, Route, Link } from "react";
+import New from "./New";
 
 export default function Nav({ city }) {
   return (
     <div className="Nav">
-      <span className="Nav-Left">
-        <span className="logo"></span>
-        <Header title={"Poco Loco"} />
-      </span>
+      <div className="Nav-left">
+        <div className="logo"></div>
+        <h1>Poco Loco</h1>
+      </div>
 
-      <span className="Nav-right">
+      <div className="Nav-right">
+        <p className="city">{city}</p>
+
+        
+
         <LoginButton />
-      </span>
+      </div>
     </div>
   );
 }

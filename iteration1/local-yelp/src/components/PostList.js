@@ -6,7 +6,7 @@ export default function PostList() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const res = await fetch("http://localhost:3000/posts");
+        const res = await fetch("http://localhost:5000/posts");
         if (!res.ok) {
           throw Error("fetch failed");
         }
@@ -23,7 +23,7 @@ export default function PostList() {
   return posts.length > 0 ? (
     <>
       {posts.map((item) => (
-        <Post key={item.id} post={item} />
+        <Post key={item._id} post={item} />
       ))}
     </>
   ) : (
