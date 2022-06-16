@@ -1,0 +1,11 @@
+{"posts":[  
+  {"title":"5 Best Chinese places in town",
+    "userId":"Shyam", "city":"Halle", "body":"The views of the mountains and the city are amazing. I highly recommend this park if you are visiting Vancouver. Tip: make sure you pay for parking whenever you park, they are diligently patrolling the parking areas.", "section": "food", "likes":15 },  
+  {"title":"How to convert you license",
+    "userId":"Bob", "city":"Vancouver", "body":"Stanley park is spectacular. It is good for all activities such as hiking, biking, running, and swimming. The scenery and trails in this park are breathtaking. This is a good place to visit whether you are solo or with friends and family. Most people will go around the island on the sea wall path but there are also a lot of cool places to see in the centre of the island as well. Sunset is beautiful and you get good view of west and north Vancouver", "section": "experiences", "likes":3},  
+  {"title":"Rental tutorial",
+    "userId":"Jai", "city":"Singapore", "body":"Most people will go around the island on the sea wall path but there are also a lot of cool places to see in the centre of the island as well. Sunset is beautiful and you get good view of west and north Vancouver", "section": "experiences", "likes":0}  
+], "user":{
+  "name": "Alice"
+}}  
+
